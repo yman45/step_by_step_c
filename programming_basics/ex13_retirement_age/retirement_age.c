@@ -6,8 +6,8 @@
 #include "../../tooling/yman_strtool.h"
 
 #define CONVERSION_BASE 10
-#define CONVERSION_MAX 1000000L
-#define MAX_AGE 200L
+#define CONVERSION_MAX 1000000UL
+#define MAX_AGE 200UL
 #define MAX_BUF_LEN 50
 #define RETIREMENT_AGE 65UL
 
