@@ -1,14 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "../../tooling/yman_artool.h"
 
 #define AR_LENGTH 3
-
-void print_array(size_t ar_length, int array[ar_length]) {
-    for (size_t i = 0; i < ar_length; i++) {
-        printf("%d ", array[i]);
-    }
-    puts("");
-}
 
 void swap(int* array, size_t first_pos, size_t second_pos) {
     int* first_cell = array + first_pos;
@@ -22,9 +16,9 @@ void swap(int* array, size_t first_pos, size_t second_pos) {
 int main(int argc, char* argv[argc+1]) {
     int a1[AR_LENGTH] = {12, 34, 56};
 
-    print_array(AR_LENGTH, a1);
+    print_int_array(AR_LENGTH, a1);
     puts("Swapping positions 1 and 2");
     swap(a1, 1, 2);
-    print_array(AR_LENGTH, a1);
+    print_int_array(AR_LENGTH, a1);
     return EXIT_SUCCESS;
 }
