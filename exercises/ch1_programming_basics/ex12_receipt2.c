@@ -32,7 +32,7 @@ int get_user_input(float* numeric_user_data) {
 }
 
 float calculate_share(float sum, float percentage) {
-    return sum / 100.0 * percentage;
+    return sum / 100.0f * percentage;
 }
 
 int main(int argc, char* argv[argc+1]) {
@@ -45,9 +45,9 @@ int main(int argc, char* argv[argc+1]) {
     }
     tax = calculate_share(cost, TAX_PERCENTAGE);
     tip = calculate_share(cost, TIP_PERCENTAGE);
-    printf("Subtotal: %.2f\n", cost);
-    printf("Tax: %.2f\n", tax);
-    printf("Tip: %.2f\n", tip);
-    printf("Total: %.2f\n", cost+tax+tip);
+    printf("Subtotal: %.2f\n", (double) cost);
+    printf("Tax: %.2f\n", (double) tax);
+    printf("Tip: %.2f\n", (double) tip);
+    printf("Total: %.2f\n", (double) (cost+tax+tip));
     return EXIT_SUCCESS;
 }

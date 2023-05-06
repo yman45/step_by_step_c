@@ -28,7 +28,7 @@ int get_user_age(unsigned long* numeric_user_data) {
         errx(EXIT_FAILURE, "Invalid user input. Conversion to unsigned long failed.");
     }
     if (*numeric_user_data > CONVERSION_MAX) {
-        errx(EXIT_FAILURE, "Conversion result is abnormal. You input might be wrong.");
+        errx(EXIT_FAILURE, "Conversion result is abnormal. Your input might be wrong.");
     }
     return EXIT_SUCCESS;
 }

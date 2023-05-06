@@ -39,7 +39,7 @@ int main(int argc, char* argv[argc+1]) {
     int ch = 0;
     int students[NUM_STUDENTS] = { 0 };
     size_t i = 0, j = 0, section = 1;
-    FILE* input = fopen("sections.txt", "r");
+    FILE* input = fopen("../ex8_section_attendance_sections.txt", "r");
     if (!input) {
         perror("fopen failed");
         return EXIT_FAILURE;
